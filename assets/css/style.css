@@ -260,3 +260,112 @@ footer p {
 	color: lightgrey;
 	margin: 40px 0;
 }
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 980px) {
+	.container {
+		width: 860px;
+	}
+
+	#about, #portfolio, #contact {
+		width: 64%;
+	}
+
+	#connect {
+		width: 32%;
+	}
+
+	#portfolio .portfolio-img {
+		width: 500px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 745px;
+	}
+
+	#about, #portfolio, #contact {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	#connect {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	#connect h2 {
+		text-align: left;
+	}
+	
+	#portfolio .portfolio-img {
+		width: 325px;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	html, body, header, .container {
+		width: 640px;
+		margin: 0;
+	}
+
+	#about, #portfolio, #contact, #connect {
+		float: none;
+		margin: 15px;
+		width: 95%;
+	}
+
+	#name {
+		width: 100%;
+		float: none;
+		padding: 1px 0;
+	}
+
+	header {
+		position: static;
+	}
+
+	header nav {
+		width: 100%;
+		float: none;
+		vertical-align: middle;
+}
+
+	header nav li {
+		width: 33%;
+		margin: 6px 0;
+		padding: 10px 0;
+	}
+
+	header nav ul li a{
+		text-align: center;
+		padding: 0 70px;
+	}
+
+	.profile-img {
+		float: none;
+		margin: 25px 203px 0 203px;
+	}
+
+	#about p {
+		margin: 15px 25px;
+	}
+
+	#portfolio .portfolio-img, #portfolio .portfolio-img img {
+		display: block;
+		width: 555px;
+	}
+
+	#portfolio .portfolio-img img {
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+
+	footer {
+		margin: 0;
+	}
+}
